@@ -1,15 +1,20 @@
 import { createMuiTheme } from '@material-ui/core/styles';
 
-const arcBlue = '#143c8d';
-const arcOrange = '#FFBA60';
+const panVelBlue = '#143c8d';
+const panVelWhite = '#FFFFFF';
 
 export default createMuiTheme({
   palette: {
     primary: {
-      main: `${arcBlue}`,
+      main: `${panVelBlue}`,
     },
     secondary: {
-      main: `${arcOrange}`,
+      main: `${panVelWhite}`,
+    },
+  },
+  typography: {
+    h6: {
+      fontSize: '.94rem',
     },
   },
 });

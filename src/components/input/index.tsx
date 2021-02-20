@@ -1,13 +1,16 @@
 import React from 'react';
 
+import { StylesProvider } from '@material-ui/core/styles';
 import { StyledContainer, StyledInput, StyledSearchIcon } from './styles';
 
 const Input: React.FC = props => {
   return (
-    <StyledContainer>
-      <StyledInput />
-      <StyledSearchIcon />
-    </StyledContainer>
+    <StylesProvider injectFirst>
+      <StyledContainer>
+        <StyledInput placeholder="O que você procura?" />
+        <StyledSearchIcon />
+      </StyledContainer>
+    </StylesProvider>
   );
 };
 

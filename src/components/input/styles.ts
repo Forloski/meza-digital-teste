@@ -15,16 +15,16 @@ export const StyledSearchIcon = styled(SearchIcon)`
   position: absolute;
   right: 5px;
   left: auto;
-  pointer-events: none;
+  cursor: pointer;
   align-items: center;
   justify-content: center;
   padding-right: 3px;
+  z-index: 1;
 `;
 
 export const StyledInput = styled(InputBase)`
   display: inline-block;
   width: 97%;
-  padding-right: 30px;
-  padding-left: 5px;
+  padding: 5px 30px 5px 5px;
   justify-self: left;
 `;

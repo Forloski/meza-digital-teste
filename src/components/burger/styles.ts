@@ -1,22 +1,25 @@
 import styled from 'styled-components';
 
 export const StyledContainer = styled.div`
-  display: flex;
+  display: flexbox;
   flex-direction: row;
   cursor: pointer;
   margin: auto;
+  align-content: center;
+  justify-content: center;
 `;
 
-export const StyledChildrenText = styled.div`
-  padding-left: 1vh;
-`;
+export const StyledChildrenText = styled.div``;
 
 export const StyledBurger = styled.div`
   display: flex;
+  justify-self: center;
+  align-self: center;
   flex-direction: column;
   justify-content: space-around;
-  width: 2rem;
-  height: 2rem;
+  width: 1.4rem;
+  height: 1.1rem;
+  margin-top: 3px;
   background: transparent;
   border: none;
   cursor: pointer;
@@ -28,8 +31,8 @@ export const StyledBurger = styled.div`
   }
 
   div {
-    width: 2rem;
-    height: 0.25rem;
+    width: 1.2rem;
+    height: 0.125rem;
     border-radius: 10px;
     background: white;
     transition: all 0.3s linear;

@@ -2,8 +2,12 @@ import styled from 'styled-components';
 
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
+
+import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
+
 import Burger from '../../burger';
 import Input from '../../input';
+import Account from '../../account';
 
 import logo from '../../../assets/logo.svg';
 
@@ -11,6 +15,7 @@ export const StyledAppBar = styled(AppBar)``;
 
 export const StyledToolbar = styled(Toolbar)`
   display: grid;
+  min-height: 62px;
   grid-template-columns: repeat(7, 1fr);
   grid-auto-rows: auto;
   grid-gap: 1vh;
@@ -20,28 +25,44 @@ export const StyledToolbar = styled(Toolbar)`
 `;
 
 export const StyledLogo = styled.a`
-  width: 114px;
-  height: 23px;
+  width: 174px;
+  height: 36px;
   display: block;
+  position: relative;
   text-indent: -9999px;
   margin: 0;
   align-self: center;
   justify-self: center;
   background-image: url('${logo}');
-  background-size: 114px;
+  background-size: 100%;
   background-repeat: no-repeat;
   grid-column: 2;
 `;
 
-export const StyledCategories = styled.div`
-  grid-column: 3;
-`;
+export const StyledCategories = styled.div``;
 
 export const StyledBurger = styled(Burger)`
   color: white;
-  background-color: red;
+  grid-column: 3;
 `;
 
 export const StyledInput = styled(Input)`
   grid-column: 4;
+  font-size: 4px;
+`;
+
+export const StyledAccount = styled(Account)`
+  grid-column: 5;
+`;
+
+export const StyledShoppingBasket = styled(ShoppingBasketIcon)`
+  grid-column: 6;
+  cursor: pointer;
+  color: #00bfdf;
+
+  transition: all 0.2s ease-in-out;
+
+  :hover {
+    transform: scale(1.2);
+  }
 `;
