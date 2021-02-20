@@ -5,7 +5,6 @@ import Toolbar from '@material-ui/core/Toolbar';
 
 import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
 
-import { BaseCSSProperties } from '@material-ui/core/styles/withStyles';
 import Burger from './burger';
 import Input from './input';
 import Account from './account';

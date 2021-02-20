@@ -6,14 +6,24 @@ export const StyledContainer = styled.div`
   height: 100%;
   display: grid;
   align-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(782px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   grid-template-rows: auto;
 `;
 
 export const StyledHeroModel = styled.img`
   grid-column: 1;
+
   width: 100%;
+  height: auto;
   justify-self: center;
+  @media only screen and (max-width: 1030px) {
+    width: auto;
+    height: 100%;
+  }
+  @media only screen and (max-width: 559px) {
+    width: 100%;
+    height: auto;
+  }
 `;
 
 StyledHeroModel.defaultProps = {
@@ -23,12 +33,12 @@ StyledHeroModel.defaultProps = {
 export const StyledTextContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: fill;
   height: 100%;
-  min-width: 782px;
   background-color: #de8e85;
   justify-self: center;
   padding-left: 16px;
+  padding-right: 16px;
   color: white;
   justify-content: center;
 `;
