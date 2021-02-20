@@ -5,9 +5,10 @@ import Toolbar from '@material-ui/core/Toolbar';
 
 import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
 
-import Burger from '../../burger';
-import Input from '../../input';
-import Account from '../../account';
+import { BaseCSSProperties } from '@material-ui/core/styles/withStyles';
+import Burger from './burger';
+import Input from './input';
+import Account from './account';
 
 import logo from '../../../assets/logo.svg';
 
@@ -39,8 +40,6 @@ export const StyledLogo = styled.a`
   grid-column: 2;
 `;
 
-export const StyledCategories = styled.div``;
-
 export const StyledBurger = styled(Burger)`
   color: white;
   grid-column: 3;
@@ -65,4 +64,8 @@ export const StyledShoppingBasket = styled(ShoppingBasketIcon)`
   :hover {
     transform: scale(1.2);
   }
+`;
+
+export const ToolbarOffset = styled.div`
+  height: 62px;
 `;

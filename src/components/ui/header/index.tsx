@@ -4,18 +4,16 @@ import Slide from '@material-ui/core/Slide';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import { StylesProvider } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
-import { makeStyles } from '@material-ui/styles';
-import IDefaultTheme from '../../../interfaces/IDefaultTheme';
 
 import {
   StyledAppBar,
   StyledToolbar,
   StyledLogo,
-  StyledCategories,
   StyledBurger,
   StyledInput,
   StyledAccount,
   StyledShoppingBasket,
+  ToolbarOffset,
 } from './styles';
 
 interface Props {
@@ -33,15 +31,7 @@ function HideOnScroll(props: Props) {
   );
 }
 
-const useStyles = makeStyles((theme: IDefaultTheme) => ({
-  toolbarMargin: {
-    ...theme.mixins.toolbar,
-  },
-}));
-
 const Header: React.FC = props => {
-  const classes = useStyles();
-
   return (
     <>
       <StylesProvider injectFirst>
@@ -50,9 +40,7 @@ const Header: React.FC = props => {
             <Typography variant="h6">
               <StyledToolbar>
                 <StyledLogo href="http://localhost:3000" />
-
                 <StyledBurger>CATEGORIAS</StyledBurger>
-
                 <StyledInput />
                 <StyledAccount>ENTRAR</StyledAccount>
                 <StyledShoppingBasket />
@@ -61,7 +49,7 @@ const Header: React.FC = props => {
           </StyledAppBar>
         </HideOnScroll>
       </StylesProvider>
-      <div className={classes.toolbarMargin} />
+      <ToolbarOffset />
     </>
   );
 };
