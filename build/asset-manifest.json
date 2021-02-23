@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.js": "./static/js/main.f00bc248.chunk.js",
+    "main.js.map": "./static/js/main.f00bc248.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.edd1af8f.js",
+    "runtime-main.js.map": "./static/js/runtime-main.edd1af8f.js.map",
+    "static/js/2.e56806b1.chunk.js": "./static/js/2.e56806b1.chunk.js",
+    "static/js/2.e56806b1.chunk.js.map": "./static/js/2.e56806b1.chunk.js.map",
+    "index.html": "./index.html",
+    "static/js/2.e56806b1.chunk.js.LICENSE.txt": "./static/js/2.e56806b1.chunk.js.LICENSE.txt",
+    "static/media/hairmodel_hero.a3c8f204.jpg": "./static/media/hairmodel_hero.a3c8f204.jpg",
+    "static/media/logo.edf84d12.svg": "./static/media/logo.edf84d12.svg",
+    "static/media/shampoo_model.99099c5e.jpg": "./static/media/shampoo_model.99099c5e.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.edd1af8f.js",
+    "static/js/2.e56806b1.chunk.js",
+    "static/js/main.f00bc248.chunk.js"
+  ]
+}

@@ -1,5 +1,6 @@
 {
-  "name": "arcdevelopment",
+  "homepage": ".",
+  "name": "mezadigital",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
